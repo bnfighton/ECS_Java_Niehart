@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class TwoQuestions 
+{
+	public static void main( String[] args )
+	{
+		Scanner keyboard = new Scanner(System.in);
+		int weight, planet;
+		
+		System.out.println("Please enter yout current weight: ");
+		weight = keyboard.nextInt();
+		
+		System.out.println("|  Size / Type              |  Animal  |  Vegitable  |    Mineral  | ");
+		System.out.println("|------------------------------------------------------------------|");
+		System.out.println("| Smaller than a bread box  |  Squirel |  Carrot     |  Paper clip |");
+		System.out.println("| Bigger than a breadbox    |  Moose   | watermelon  |    Camaro   |");
+		planet = keyboard.nextInt(); 
+		
+		if (planet == 1)
+		{
+			System.out.println("Your weight would be " +( weight * 0.78)+ " pounds on that planet.");
+		}
+		if (planet == 2)
+		{
+			System.out.println("Your weight would be " +( weight * 0.39)+ " pounds on that planet.");
+		}
+		if (planet == 3)
+		{
+			System.out.println("Your weight would be " +( weight * 2.65)+ " pounds on that planet.");
+		}
+		if (planet == 4)
+		{
+			System.out.println("Your weight would be " +( weight * 1.17)+ " pounds on that planet.");
+		}
+		if (planet == 5)
+		{
+			System.out.println("Your weight would be " +( weight * 1.05)+ " pounds on that planet.");
+		}
+		if (planet == 6)
+		{
+			System.out.println("Your weight would be " +( weight * 1.23)+ " pounds on that planet.");
+		}
+	}
+		
+		
+}

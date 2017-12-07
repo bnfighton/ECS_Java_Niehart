@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class ALittleQuiz 
+{
+	public static void main( String[] args )
+	{
+		Scanner keyboard = new Scanner(System.in);
+		int answer_1, answer_2, answer_3;
+		
+		
+		System.out.println("Q1) What is the newest Iphone?");
+		System.out.println("	1. Iphone 8 ");
+		System.out.println("	2. Iphone x ");
+		System.out.println("	3. Iphone 10 ");
+		answer_1 = keyboard.nextInt();
+		
+		if (answer_1 == 1)
+		{
+			System.out.println("Your Wrong. :( ");
+		}
+		if (answer_1 == 2)
+		{
+			System.out.println("Your Right! :)");
+		}
+		if (answer_1 == 3)
+		{
+			System.out.println("Your Wrong. :(");
+		}
+		
+		System.out.println("Q2) Who is the most amazing person ever?");
+		System.out.println("	1. Ben Factor ");
+		System.out.println("	2. Benjamin Franklin ");
+		System.out.println("	3. Ben Niehart ");
+		answer_2 = keyboard.nextInt();
+		
+		if (answer_2 == 1)
+		{
+			System.out.println("YOUR TERRIBLE AT THIS!!!");
+		}
+		if (answer_2 == 1)
+		{
+			System.out.println("YOUR REALLY BAD!!!");
+		}
+		if (answer_2 == 1)
+		{
+			System.out.println("You are the smartest person ever.  :) ;)");
+		}
+		System.out.println("Q2) What is the best collage?");
+		System.out.println("	1. USC ");
+		System.out.println("	2. STANFORD ");
+		System.out.println("	3. ALABAMA ");
+		answer_3 = keyboard.nextInt();
+		
+		if (answer_3 == 1)
+		{
+			System.out.println("Wow you really know your stuff! :) ;)!");
+		}
+		if (answer_3 == 1)
+		{
+			System.out.println("YOUR REALLY BAD!!!");
+		}
+		if (answer_3 == 1)
+		{
+			System.out.println("YOU DONT KNOW WHAT YOUR TALKING ABOUT!!!");
+		}
+	}
+		
+		
+}
+

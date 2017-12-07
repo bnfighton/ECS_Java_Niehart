@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class BMICalcBetter 
+{
+	public static void main( String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		double feet, inches, weight;
+		
+		System.out.println("BMi ( Body Mass Index ) is a way of representing your size.");
+		
+		System.out.println("How many feet tall are you? ");
+		feet = keyboard.nextDouble();
+		
+		System.out.println("How many inches? ");
+		inches = keyboard.nextDouble();
+		
+		System.out.println("How many pounds do you weigh? ");
+		weight = keyboard.nextDouble();
+		
+		System.out.println("Your BMI is:  " + ( weight /((feet + inches)*(feet * inches)))  + " ");
+		
+		if ( ( weight /((feet + inches)*(feet * inches))) < 18.5 )
+		{
+			System.out.println("You are underweight.");
+		}
+		else if ( ( weight /((feet + inches)*(feet * inches))) >= 18.5 || ( ( weight /((feet + inches)*(feet * inches))) <= 24.9 ) )
+		{
+			System.out.println("You are normal.");
+		}
+		else if ( ( weight /((feet + inches)*(feet * inches))) >= 25.0 || ( ( weight /((feet + inches)*(feet * inches))) <= 29.9 ) )
+		{
+			System.out.println("You are overweight.");
+		}
+		else if ( ( weight /((feet + inches)*(feet * inches))) >= 30.0 )
+		{
+			System.out.println("You are obese.");
+		}
+	}
+
+}
