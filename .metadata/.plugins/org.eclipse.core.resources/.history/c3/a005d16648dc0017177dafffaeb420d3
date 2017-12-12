@@ -1,0 +1,59 @@
+import java.util.Random;
+ 
+public class DoubleDice
+{
+	public static void main ( String[] args )
+	{
+		Random r = new Random();
+ 
+		
+		int choice_1 = 1 + r.nextInt(6);
+		int choice_2 = 2 + r.nextInt(6);
+		int choice_3 = 1 + r.nextInt(6);
+		int choice_4 = 2 + r.nextInt(6);
+		int choice_5 = 1 + r.nextInt(6);
+		int choice_6 = 2 + r.nextInt(6);
+		int choice_7 = 1 + r.nextInt(6);
+		int choice_8 = 2 + r.nextInt(6);
+		
+		System.out.println("Roll #1:" + choice_1 + "");
+		
+			
+
+		System.out.println("Roll #2:" + choice_2 + "");
+	
+		System.out.println( "The total is " + (choice_1 + choice_2)+ " ");
+		
+		
+		
+		
+		System.out.println("Roll #1:" + choice_3 + "");
+		
+			
+
+		System.out.println("Roll #2:" + choice_4 + "");
+	
+		System.out.println( "The total is " + (choice_3 + choice_4)+ " ");
+		
+		
+		
+		
+		System.out.println("Roll #1:" + choice_5 + "");
+		
+			
+
+		System.out.println("Roll #2:" + choice_6 + "");
+	
+		System.out.println( "The total is " + (choice_5 + choice_6)+ " ");
+		
+		
+		
+		System.out.println("Roll #1:" + choice_7 + "");
+		
+			
+
+		System.out.println("Roll #2:" + choice_8 + "");
+	
+		System.out.println( "The total is " + (choice_7 + choice_8)+ " ");
+	}
+}

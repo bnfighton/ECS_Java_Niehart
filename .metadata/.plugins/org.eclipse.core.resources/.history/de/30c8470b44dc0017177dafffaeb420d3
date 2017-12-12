@@ -1,0 +1,47 @@
+import java.util.Random;
+ 
+public class Dice
+{
+	public static void main ( String[] args )
+	{
+		Random r = new Random();
+ 
+		
+		int choice_1 = 1 + r.nextInt(6);
+		int choice_2 = 2 + r.nextInt(6);
+		String response = "";
+		
+		System.out.println("Roll #1:" + choice_1 + "");
+		if ( choice == 1 )
+			response = "1";
+		else if ( choice == 2 )
+			response = "2";
+		else if ( choice == 3 )
+			response = "3";
+		else if ( choice == 4 )
+			response = "4";
+		else if ( choice == 5 )
+			response = "5";
+		else if ( choice == 6 )
+			response = "6";
+		
+		System.out.println("Roll #2:" + choice_2 + "");
+		if ( choice == 1 )
+			response = "1";
+		else if ( choice == 2 )
+			response = "2";
+		else if ( choice == 3 )
+			response = "3";
+		else if ( choice == 4 )
+			response = "4";
+		else if ( choice == 5 )
+			response = "5";
+		else if ( choice == 6 )
+			response = "6";
+		
+		else 
+			response = "8-BALL ERROR!";
+ 
+		System.out.println( "MAGIC 8-BALL SAYS: " + response );
+	}
+}

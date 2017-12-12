@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CollatzSequence {
+
+    public static void main(final String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+        while(true){
+            System.out.print("\n\nSelect a positive integer: ");
+            int n = scanner.nextInt();
+            printHailstone(n);
+        }
+    }
+
+    /**
+     * Print the terms, length and maximum value of the 
+     * 'hailstone sequence' from n to 1
+     *
+     * @param n The starting point of the hailstone sequence
+     */
+    public static void printHailstone(int n) {
+        int count = 1;
+        int maxValue = n;
+
+        System.out.print("\n[");
+        while (n > 1) {
+            System.out.print(n + ", ");
+            count++;
+            n = n % 2 == 0 ? n / 2 : 3 * n + 1;
+            maxValue = Math.max(n, maxValue);
+        }
+
+        System.out.printf(
+           "1]\nSequence length: %d\nMaximum value: %d",
+           count, maxValue);
+    }
+}
